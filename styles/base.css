@@ -20,7 +20,6 @@ nav {
     align-items: center;
     padding: 1em 0;
     background-color: #12181e;
-
 }
 
 nav a {
@@ -30,76 +29,69 @@ nav a {
 
 main {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
+    grid-template-columns: 1fr 1fr;
     gap: 2em;
     padding: 2em;
     flex: 1;
 }
 
-.left{
+.left {
     display: grid;
-    grid-template-columns: 1fr 1fr  ; /* 2 columnas */
-    grid-template-rows: auto  auto; /* Primera fila ajustada, las otras dos más altas */
-    gap: 1em; /* Espacio entre las celdas */
-    padding: 1em; /* Añadir un poco de espacio interno */
-    border: 2px solid #333; /* Contorno del contenedor */
-}
-.right{
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* 2 columnas */
-    grid-template-rows: auto 1fr ; /* Primera fila ajustada, las otras dos más altas */
-    gap: 1em; /* Espacio entre las celdas */
-    padding: 1em; /* Añadir un poco de espacio interno */
-    border: 2px solid #333; /* Contorno del contenedor */
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 1em;
+    padding: 1em;
+    border: 2px solid #333;
 }
 
-
+.right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 1em;
+    padding: 1em;
+    border: 2px solid #333;
+}
 
 .title-bar {
-    background-color: #253f5c; /* Color de fondo */
+    background-color: #253f5c;
     padding: 1em;
-    color: white; /* Texto blanco */
+    color: white;
     width: 100%;
     text-align: center;
-    margin-bottom: 1em; /* Espacio debajo de la barra */
-    grid-column: 1/-1; /* Ocupa toda la primera fila (2 columnas) */
-    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+    margin-bottom: 1em;
+    grid-column: 1/-1;
+    box-sizing: border-box;
     position: relative;
-    z-index: 1; /* Asegura que no se sobreponga con otros elementos */
+    z-index: 1;
 }
 
-
 .left-paragraph {
-    grid-row: 2 / 3; /* En la segunda fila */
-    grid-column: 1; /* En la primera columna */
+    grid-row: 2 / 3;
+    grid-column: 1;
 }
 
 .left-image {
-    grid-row: 2/ 3; /* En la segunda fila */
-    grid-column: 2; /* En la segunda columna */
+    grid-row: 2/ 3;
+    grid-column: 2;
     max-width: 50%;
     position: relative;
     padding: 30px;
-    padding-left: 50px
-    ;
+    padding-left: 50px;
 }
 
-
-.left-image-flag{
-    grid-row: 4 / 4; /* En la segunda fila */
-    grid-column: 1; /* En la segunda columna */
+.left-image-flag {
+    grid-row: 4 / 4;
+    grid-column: 1;
     max-width: 80%;
     position: relative;
     padding: 10px;
-
-
 }
 
-.title3{
+.title3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
 
 .card {
@@ -110,11 +102,10 @@ main {
 
 .card h2 {
     padding: 1em;
-    background-color: #007bff; /* Fondo azul para los títulos */
-    color: white; /* Color blanco para el texto */
+    background-color: #007bff;
+    color: white;
     border-radius: 5px;
     margin-bottom: 1em;
-   
 }
 
 img {
