@@ -1,0 +1,127 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em 0;
+    background-color: #f8f9fa;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
+    gap: 2em;
+    padding: 2em;
+    flex: 1;
+}
+
+.left{
+    display: grid;
+    grid-template-columns: 1fr 1fr  ; /* 2 columnas */
+    grid-template-rows: auto  auto; /* Primera fila ajustada, las otras dos más altas */
+    gap: 1em; /* Espacio entre las celdas */
+    padding: 1em; /* Añadir un poco de espacio interno */
+    border: 2px solid #333; /* Contorno del contenedor */
+}
+.right{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 columnas */
+    grid-template-rows: auto 1fr ; /* Primera fila ajustada, las otras dos más altas */
+    gap: 1em; /* Espacio entre las celdas */
+    padding: 1em; /* Añadir un poco de espacio interno */
+    border: 2px solid #333; /* Contorno del contenedor */
+}
+
+
+
+.title-bar {
+    background-color: #007bff; /* Color de fondo */
+    padding: 1em;
+    color: white; /* Texto blanco */
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1em; /* Espacio debajo de la barra */
+    grid-column: span 2; /* Ocupa toda la primera fila (2 columnas) */
+}
+
+.left-paragraph {
+    grid-row: 2 / 3; /* En la segunda fila */
+    grid-column: 1; /* En la primera columna */
+}
+
+.left-image {
+    grid-row: 2/ 3; /* En la segunda fila */
+    grid-column: 2; /* En la segunda columna */
+    max-width: 50%;
+    position: relative;
+    padding: 30px;
+    padding-left: 50px
+    ;
+}
+
+
+.left-image-flag{
+    grid-row: 4 / 4; /* En la segunda fila */
+    grid-column: 1; /* En la segunda columna */
+    max-width: 80%;
+    position: relative;
+    padding: 10px;
+
+
+}
+
+.title3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.card {
+    padding: 1em;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.card h2 {
+    padding: 1em;
+    background-color: #007bff; /* Fondo azul para los títulos */
+    color: white; /* Color blanco para el texto */
+    border-radius: 5px;
+    margin-bottom: 1em;
+   
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #007bff;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    width: 100%;
+    margin-top: auto;
+}
