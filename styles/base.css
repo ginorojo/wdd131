@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-color: #007bff;
+    background-color: #253f5c;
     color: white;
     padding: 1em 0;
     text-align: center;
@@ -19,11 +19,12 @@ nav {
     justify-content: space-around;
     align-items: center;
     padding: 1em 0;
-    background-color: #f8f9fa;
+    background-color: #12181e;
+
 }
 
 nav a {
-    color: #333;
+    color: white;
     text-decoration: none;
 }
 
@@ -55,14 +56,18 @@ main {
 
 
 .title-bar {
-    background-color: #007bff; /* Color de fondo */
+    background-color: #253f5c; /* Color de fondo */
     padding: 1em;
     color: white; /* Texto blanco */
     width: 100%;
     text-align: center;
     margin-bottom: 1em; /* Espacio debajo de la barra */
-    grid-column: span 2; /* Ocupa toda la primera fila (2 columnas) */
+    grid-column: 1/-1; /* Ocupa toda la primera fila (2 columnas) */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+    position: relative;
+    z-index: 1; /* Asegura que no se sobreponga con otros elementos */
 }
+
 
 .left-paragraph {
     grid-row: 2 / 3; /* En la segunda fila */
@@ -118,7 +123,7 @@ img {
 }
 
 footer {
-    background-color: #007bff;
+    background-color:#253f5c;
     color: white;
     padding: 1em 0;
     text-align: center;
