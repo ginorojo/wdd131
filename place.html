@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> WDD 131 - Place - Gino Rojo </title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - place - Gino Rojo">
+    <meta name="author" content="Gino Rojo">
+    <link href="styles/place1.css" rel="stylesheet">
+    <link href="styles/place2.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <script src="scripts/place.js" defer=""></script>
+    <script src="scripts/place2.js" defer=""></script>
+</head>
+<body>
+  <header>
+    <h1>Nicaragua</h1>
+  </header>
+  <main>
+    <div class="hero">
+      <picture>
+        <source media="(min-width: 900px)" srcset="images/large-picture.webp">
+        <source media="(min-width: 450px)" srcset="images/small-picture.webp">
+        <img src="images/small-picture.webp" alt="flag">
+      </picture>
+    </div>
+    <section class="data">
+      <h2>Data</h2>
+      <div class="data-card">
+        <table class="data-table">
+          <tbody>
+            <tr>
+              <td class="data-key">Area:</td>
+              <td class="data-value">130,375 km²</td>
+            </tr>
+            <tr>
+              <td class="data-key">Population:</td>
+              <td class="data-value">6,969,107</td>
+            </tr>
+            <tr>
+              <td class="data-key">Capital:</td>
+              <td class="data-value">Managua</td>
+            </tr>
+            <tr>
+              <td class="data-key">Languages:</td>
+              <td class="data-value">Spanish</td>
+            </tr>
+            <tr>
+              <td class="data-key">Currency:</td>
+              <td class="data-value">Cordoba (NIO)</td>
+            </tr>
+            <tr>
+              <td class="data-key">Time Zone:</td>
+              <td class="data-value">CST, UTC - 6:00</td>
+            </tr>
+            <tr>
+              <td class="data-key">Calling Code:</td>
+              <td class="data-value">+505</td>
+            </tr>
+            <tr>
+              <td class="data-key">Internet TLD:</td>
+              <td class="data-value">.ni</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>      
+    </section>
+    <section class="weather">
+      <div class="weather-heading">
+        <h2>Weather</h2>
+        <img class="icon" src="images/icon.svg" alt="Weather Icon">
+      </div>
+      <div class="weather-card">
+        <table class="weather-table">
+          <tbody>
+            <tr>
+              <td class="weather-key">Temperature: </td>
+              <td class="weather-value">32 °C</td>
+            </tr>
+            <tr>
+              <td class="weather-key">Conditions: </td>
+              <td class="weather-value"> Clear Skies </td>
+            </tr>
+            <tr>
+              <td class="weather-key">Wind: </td>
+              <td class="weather-value">20 km/h</td>
+            </tr>
+            <tr>
+              <td class="weather-key">Wind Chill: </td>
+              <td class="weather-value">""</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>© <span id="currentyear"></span> Gino Rojo </p>
+    <p id="lastModified"></p>
+  </footer>
+
+</body></html>

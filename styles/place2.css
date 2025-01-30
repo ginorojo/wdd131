@@ -1,0 +1,71 @@
+* {
+  font-family: Albert Sans, Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+  --whiteborders: #f9fcfa;
+  
+}
+
+h1 {
+  font-family: Audiowide, Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding: 2rem;
+  color: white;
+  background-color:#122c46d2;;
+}
+
+footer {
+  color: white;
+  background:#122c46d2;;
+  padding: 1rem;
+  text-align: center;
+  grid-column: 1 / 4;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+.weather .icon {
+  max-width: 100px;
+  height: auto;
+}
+
+.weather-key {  
+  text-align: right;
+  font-weight: bold;
+}
+
+.weather-heading {
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.data-card, .weather-card {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.data label {
+  font-weight: bold;
+}
+
+.data-key {
+  text-align: right;
+  font-weight: bold;
+}
+
+.data-value {
+  text-align: left;
+}
+
+.data-table td, .weather-table td {
+  padding: 5px;
+}
