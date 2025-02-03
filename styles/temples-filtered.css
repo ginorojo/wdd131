@@ -86,7 +86,7 @@ nav {
 nav a {
   color:white;
   text-decoration: none;
-  padding: 1rem;
+  padding: 0rem;
   display: none;
   font-size: 1rem;
 }
