@@ -23,22 +23,48 @@ body{
     box-sizing: inherit;
 }
 
-h1,h2{
-    font-family:(--title) ;
+/*globales*/
+
+.container{
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 95%;
+    
 }
 
-h3,p,a{
-    font-family: (--paragraph);
+h1, h2 {
+    font-family: var(--title);
+}
+
+h3, p, a {
+    font-family: var(--paragraph);
+}
+
+
+img{
+    max-width: 100%;
 }
 
 .red{
     color: var(--red);
+    position: relative;
+    top: -8px;  
 }
+
 .white{
     color: var(--white);
+    position: relative;
+    top: -8px;
+} 
+
+.logo-appe img{
+    width: 50px;
+
 }
+
 .logo h2{
     font-size: 3rem;
+
 }
 
 .hide{
@@ -47,8 +73,8 @@ h3,p,a{
 
 .btn-Close{
     font-size: 3rem;
-    color: var(--red);
     font-weight: bold;
+    color: var(--red);
     position:absolute;
     top: 0;
     right: 50px;
@@ -70,12 +96,10 @@ h3,p,a{
 }
 
     100%{
-        transform:translateX(0) ;
+        transform:translateX(0);
     }
 
-
 }
-
 
 .btn-Close:hover{
     cursor: pointer;
@@ -84,14 +108,27 @@ h3,p,a{
 .btn{
     text-decoration: none;
     color: var(--white);
-    font-size: 2.2rem;
+    font-size: 2rem;
     text-transform: capitalize;
     padding: 1rem 5rem;
     border-radius: 5px;
     transition: all .3s ease-in-out;
 }
+
+@media (min-width: 768px) {
+    .btn {
+        font-size: 2.2rem;
+    }
+}
+
 .border{
-    border: 4px solid var(--white);
+    border: 3px solid var(--white);
+}
+
+@media (min-width: 768px) {
+    .border {
+        border: 4px solid var(--white);
+    }
 }
 
 .border:hover{
@@ -100,12 +137,22 @@ h3,p,a{
 
 }
 
-
-.container{
-    max-width: 120rem;
-    margin: 0 auto;
-    width: 95%;
+.btn-red{
+    background-color: var(--green);
+    font-weight: bold;
+    font-family:var(--paragraph);
+    display: inline-block;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
 }
+
+.btn-red svg{
+    width: 20px;
+    padding:3px;
+
+}
+/*encabezado*/
 
 .container-navegation{
     position: relative;
@@ -119,15 +166,14 @@ h3,p,a{
     justify-content: space-between;
 }
 
-.logo h2,.content-navegation a {
+.logo h2,.navegation a {
     color: var(--white);
 }
 
-.navegation a:nth-child(even):hover{
-    color:var(--red)
-
-
+.logo h2{
+    font-size: 3rem;
 }
+
 .navegation a{
     text-decoration:none;
     font-size: 2.2rem; 
@@ -137,16 +183,20 @@ h3,p,a{
     transition: color .3s ease-in-out;
     text-align: center;
 
-
-
 }
 
 @media (min-width: 768px) {
     .navegation a {
-        text-align: left;
+    text-align: left;
     }
     
 }
+.navegation a:nth-child(odd):hover{
+        color:var(--red)
+    
+}
+
+
 .navegation a:first-of-type{
     margin-top: 5rem;
 
@@ -206,7 +256,7 @@ h3,p,a{
 
 .text-header h2{
     color: var(--white);
-    font-size: 8rem; 
+    font-size: 4rem; 
 
 }
 
@@ -217,13 +267,105 @@ figure {
     padding: 0;
     top: 0;
     left: 0;
+    
 }
 
+@media (min-width: 768px) {
+    .text-header h2 {
+        font-size: 8rem;
+        
+    }
+}
 
 figure img{
     width: 100%;
     height: 100%;
-    padding: 0;
-    margin: 0;
+   
 
 }
+
+/*sobre nosotros*/
+
+.container-us {
+    padding-top: 5rem;
+    margin: 2rem;
+    
+}
+
+@media (min-width: 768px){
+    .container-us {
+        display: flex;
+        justify-content: space-between;
+        margin: 4rem;
+        
+    }
+}
+
+
+.text-us, .image-us {
+    flex: 0 0 calc(50% - 1rem); /* Ajustar tamaño */
+}
+
+.text-us .welcome{
+    font-size:4rem;
+    color: var(--red);
+    text-align: center;
+
+}
+
+@media (min-width: 768px){
+    .text-us .welcome{
+        text-align: left;
+        
+}}
+
+
+
+.text-us h1{
+    font-size:5rem;
+    text-align: center;
+}
+
+h1, img{
+    margin-bottom:-10px;
+
+}
+
+
+
+@media (min-width: 768px){
+    .text-us h1{
+    text-align: left;
+}}
+
+
+
+.text-us p{
+    font-size:2rem ;
+    text-align: center;
+}
+
+@media (min-width: 768px){
+    .text-us p{
+        text-align: left;
+    }}
+
+
+
+.image-us {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-us img {
+    border-radius: 5px;
+}
+
+.image1, .image2 {
+    flex: 0 0 calc(50% - 1rem);
+}
+
+.image2 img {
+    margin-bottom: 1rem;
+}
+
