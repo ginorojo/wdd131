@@ -55,20 +55,18 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function updateReviewCounter() {
-  let reviewCount = localStorage.getItem("reviewCounter") || 0;
-  reviewCount = parseInt(reviewCount); 
-  let counter = document.getElementById("counter");
-  counter.textContent = reviewCount; 
-}
 
-updateReviewCounter(); 
-
-function incrementReviewCounter() {
   let reviewCount = localStorage.getItem("reviewCounter") || 0;
   reviewCount = parseInt(reviewCount) + 1; 
+
   localStorage.setItem("reviewCounter", reviewCount);
-  document.getElementById("counter").textContent = reviewCount;
+
+  console.log(reviewCount);
+
+  let counter = document.getElementById("counter");
+  counter.textContent = reviewCount;
 }
 
+updateReviewCounter();
 
 
