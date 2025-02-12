@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Take this survey and help us improve our services">
+    <meta name="author" content="Gino Rojo">
+    <title>Product review - Gino Rojo </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@700&family=Mulish:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+
+<body>
+    <header>
+        <h1>Form<span id="title"></span></h1>
+    </header>
+    <main>
+        <h1>Product Review</h1>
+        <form method="get" action="review.html#">
+            <div class="products">
+                <label for="product">Product Name: </label>
+                <select id="product" name="product" required="">
+                    <option value="" disabled="" selected="">Select a Product...</option>
+                <option value="flux capacitor">flux capacitor</option><option value="power laces">power laces</option><option value="time circuits">time circuits</option><option value="low voltage reactor">low voltage reactor</option><option value="warp equalizer">warp equalizer</option></select>
+            </div>
+
+            <div class="rating-container">
+                <span class="rating-label">Overall Rating</span>
+                <div class="rating">
+                    <div class="rating-item">
+                        <label for="star1">★</label>
+                        <input type="radio" id="star1" name="rating" value="1" required="">
+                    </div>
+                    <div class="rating-item">
+                        <label for="star2">★★</label>
+                        <input type="radio" id="star2" name="rating" value="2" required="">
+                    </div>
+                    <div class="rating-item">
+                        <label for="star3">★★★</label>
+                        <input type="radio" id="star3" name="rating" value="3" required="">
+                    </div>
+                    <div class="rating-item">
+                        <label for="star4">★★★★</label>
+                        <input type="radio" id="star4" name="rating" value="4" required="">
+                    </div>
+                    <div class="rating-item">
+                        <label for="star5">★★★★★</label>
+                        <input type="radio" id="star5" name="rating" value="5" required="">
+
+                    </div>
+                </div>
+            </div>
+                <div class="installation-container">
+                    <label for="installationDate">Date of Installation:</label>
+                    <input type="date" id="installationDate" name="installationDate" required="">
+                </div>
+                <div class="feature-container">
+                    <label class="feature-title">Which features did you find useful in the product?</label>
+                    <p>(Check all that apply)</p>
+                    <div id="features">
+                        <div class="feature-item">
+                            <input type="checkbox" id="feature1" name="features" value="Feature 1">
+                            <label for="feature1">Durability</label>
+                        </div>
+                        <div class="feature-item">
+                            <input type="checkbox" id="feature2" name="features" value="Feature 2">
+                            <label for="feature2">Ease to Use</label>
+                        </div>
+                        <div class="feature-item">
+                            <input type="checkbox" id="feature3" name="features" value="Feature 3">
+                            <label for="feature3">Performance</label>
+                        </div>
+                        <div class="feature-item">
+                            <input type="checkbox" id="feature4" name="features" value="Feature 4">
+                            <label for="feature3">Design</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-container">
+                    <label for="review">Written Review: <span>(optional)</span></label>
+                    <textarea id="review" name="review"></textarea>
+                </div>
+
+                <div class="user-name">
+                    <label for="username">User Name: <span>(optional)</span></label>
+                    <input type="text" id="username" name="username">
+                </div>
+                <button type="submit">Post Review</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>
+            ©<span id="year"></span> Gino Rojo
+        </p>
+        <p class="lastMod"><span id="modification"></span></p>
+    </footer>
+    <script src="scripts/form.js" defer=""></script>
+
+
+</body></html>

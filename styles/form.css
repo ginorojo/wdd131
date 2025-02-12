@@ -1,0 +1,176 @@
+:root{
+    --white:white;
+    --body:#d8dbdd88;
+    --dark: #3e4041;
+    --rating:#141515a1;
+    --title:'Mulish', sans-serif;
+    --paragraph: 'Mulish', sans-serif;
+}
+header {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    margin: auto;
+    text-align: center;
+    background-color: var(--dark);
+}
+
+header h1 {
+    color:var(--white);
+    font-family:var(--title);
+}
+
+body {
+    background-color: var(--body);
+}
+
+main {
+    width: 70%;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+main h1 {
+    color:var(--dark);
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+}
+
+.products label {
+    font-weight: bold;
+    text-align: left;
+}
+
+select {
+    width: 100%;
+    border-radius: 0.5em;
+}
+
+.rating-container {
+    display: flex;
+    gap: 1em;
+    margin-top: 1em;
+    flex-direction: column;
+    padding-bottom: 0.5em;
+}
+
+.rating-label {
+    font-weight: bold;
+    text-align: left;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin: 0 auto;
+}
+
+.rating-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:var(--rating);
+    font-size: 1em;
+}
+
+.installation-container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0.5em;
+}
+
+.installation-container label {
+    font-weight: bold;
+    text-align: left;
+}
+
+#installationDate {
+    border-radius: 0.5em;
+}
+
+.feature-container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0.5em;
+}
+
+.feature-title {
+    font-weight: bold;
+    text-align: left;
+}
+
+input[type="checkbox"] {
+    width: 1.3em;
+    height:1.3em;
+}
+
+.feature-container p {
+    text-align: left;
+    font-style: var(--paragraph);
+    margin: 0;
+    padding-bottom: 0.5em;
+}
+
+.review-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+    padding-bottom: 0.5em;
+}
+
+.review-container label {
+    font-weight: bold;
+    text-align: left;
+}
+
+.review-container textarea {
+    border-radius: 0.2em;
+    height: 10rem;
+}
+
+.review-container span, .user-name span {
+    color:var(--rating);
+    font-style: var(--paragraph);
+}
+
+.user-name {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0.5em;
+}
+
+.user-name label {
+    font-weight: bold;
+    text-align: left;
+}
+
+button {
+    background-color:var(--dark);
+    color:var(--white);
+    font-weight: 700;
+    padding: 0.5rem;
+    border-radius: 0.5em;
+    border-color: transparent;
+}
+
+footer {
+    background-color:var(--dark);
+    color:var(--white);
+    padding: 5px;
+    text-align: center;
+}
+
+@media only screen and (min-width: 40em) {
+    header {
+        display: grid;
+        grid-template-columns: 30% 70%;
+    }
+
+    header h1 {
+        color: white;
+    }
+
+}
