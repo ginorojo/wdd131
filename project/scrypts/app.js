@@ -1,6 +1,6 @@
 const menu = document.querySelector('.hamburger');
 const navegation = document.querySelector('.navegation');
-
+const images=document.querySelectorAll('img');
 document.addEventListener('DOMContentLoaded',()=>{
     events();
 
@@ -21,17 +21,34 @@ const bottonClose = () =>{
     const overlay = document.createElement('div');
     overlay.classList.add('full-screen');
     const body = document.querySelector('body');
+    if(document.querySelectorAll('.full-screen').length>0)return;
     body.appendChild(overlay);
-    if(document.querySelectorAll('.full-screen').lenght>0)return;
     btnClose.textContent = 'x';
     btnClose.classList.add('btn-Close');
-    while(navegation.children[5]){
-        navegation.removeChild(navegation.children[5]);
-    }
+    //while(navegation.children[5]){
+        //navegation.removeChild(navegation.children[5]);
     navegation.appendChild(btnClose);
     closeMenu(btnClose,overlay);
 
-} 
+}
+
+const observer = new IntersectionObserver((entries, observer)=>{
+    entries.forEach(entry =>{
+        if (entry.isIntersecting){
+            const image = entry.target;
+            image.src =image.dataset.src;
+            observer.unobserve(image);
+        }
+
+    });
+});
+
+images.forEach(image => {
+    
+    observer.observe(image);
+});
+
+
 
 const closeMenu = (boton, overlay) =>{
     boton.addEventListener('click', ()=>{

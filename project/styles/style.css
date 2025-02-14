@@ -137,7 +137,7 @@ img{
 
 }
 
-.btn-red{
+.btn-green{
     background-color: var(--green);
     font-weight: bold;
     font-family:var(--paragraph);
@@ -147,7 +147,18 @@ img{
     border-radius: 1rem;
 }
 
-.btn-red svg{
+.btn-red{
+    background-color: var(--red);
+    font-weight: bold;
+    font-family:var(--paragraph);
+    display: inline-block;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+}
+
+
+.btn-green svg{
     width: 20px;
     padding:3px;
 
@@ -212,11 +223,11 @@ img{
     padding: 3rem 4rem;
     background-color:var(--dark);
     animation: displacement 0.5s ease-in-out;
-    z-index: 10;
+    z-index: 15;
 }
 
 .hamburger:hover{
-   cursor: pointer; 
+    cursor: pointer; 
 }
 
 .hamburger span{
@@ -239,7 +250,7 @@ img{
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom:0;
     background-color: rgba(0,0,0,.5);
 }
 .text-header{
@@ -280,27 +291,23 @@ figure {
 figure img{
     width: 100%;
     height: 100%;
-   
-
 }
 
 /*sobre nosotros*/
 
 .container-us {
-    padding-top: 5rem;
-    margin: 2rem;
-    
+    padding-top: 4rem;  
 }
+
 
 @media (min-width: 768px){
     .container-us {
         display: flex;
         justify-content: space-between;
-        margin: 4rem;
+        margin:8rem 16rem;
         
     }
 }
-
 
 .text-us, .image-us {
     flex: 0 0 calc(50% - 1rem); /* Ajustar tamaño */
@@ -310,6 +317,7 @@ figure img{
     font-size:4rem;
     color: var(--red);
     text-align: center;
+    margin-top: 5px;
 
 }
 
@@ -363,9 +371,90 @@ h1, img{
 
 .image1, .image2 {
     flex: 0 0 calc(50% - 1rem);
-}
+
+}  
 
 .image2 img {
     margin-bottom: 1rem;
 }
+.separator{
+    background-image: url('../images/ensalada.webp');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 2;
+}
+
+.separator::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.5 );
+    z-index: -1;
+}
+
+.content-separator{
+    padding: 5rem;
+
+}
+
+.content-separator h2{
+    font-size: 4rem;
+    color: var(--white);
+    text-align: center;
+}
+
+@media(min-widht: 768px){
+    .content-separator h2{
+        text-align: left;
+        font-size: 5rem;
+        color: var(--white);
+    }
+}
+
+.content-separator p{
+    color: var(--white);
+    font-size: 3rem;
+    text-align: center;
+}
+@media(min-widht: 768px){
+    .content-separator p{
+       text-align: left;
+    }
+}
+
+/*seccion del chef*/
+
+.chef h2{
+    background-color: var(--red);
+    display: inline-block;
+    padding: 1rem 3rem;
+    color: var(--white);
+    font-size: 4rem;
+
+}
+
+@media(min-width: 768px) {
+    .content-chef{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.text-chef, .image-chef{
+    flex: 0 0 calc(50% - 1rem);
+}
+
+.text-chef h3{
+    font-size:3rem;
+}
+
+.text-chef p{
+    font-size: 2rem;
+}
+
 
