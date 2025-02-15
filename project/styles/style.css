@@ -138,14 +138,15 @@ img{
 
 }
 
-.btn-green{
+.btn-green {
     background-color: var(--green);
     font-weight: bold;
     font-family:var(--paragraph);
     display: inline-block;
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-bottom: 2rem;
     border-radius: 1rem;
+    justify-content: center;
 }
 
 .btn-red{
@@ -157,7 +158,6 @@ img{
     margin-bottom: 2rem;
     border-radius: 1rem;
 }
-
 
 .btn-green svg{
     width: 20px;
@@ -305,7 +305,7 @@ figure img{
     .container-us {
         display: flex;
         justify-content: space-between;
-        margin:8rem 16rem;
+        margin:8rem 12rem;
         
     }
 }
@@ -458,4 +458,6 @@ h1, img{
     font-size: 2rem;
 }
 
-
+iframe{
+    width: 100%;
+}
