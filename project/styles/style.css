@@ -499,6 +499,7 @@ iframe{
 }
 .information-contact i{
     margin-right: 1rem;
+    text-decoration:none;
 }
 
 .social-media{
@@ -559,6 +560,7 @@ iframe{
 }
 .info p{
     font-size: 1.8rem;
+    text-decoration:none;
 }
 
 .redes-pie{
